@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com",
+      "password": "password456"
+    }
+  ],
+  "continents": [
+    {
+      "id": 1,
+      "name": "North America"
+    },
+    {
+      "id": 2,
+      "name": "Europe"
+    },
+    {
+      "id": 3,
+      "name": "Asia"
+    },
+    {
+      "id": 4,
+      "name": "Africa"
+    },
+    {
+      "id": 5,
+      "name": "Australia"
+    },
+    {
+      "id": 6,
+      "name": "South America"
+    },
+    {
+      "id": 7,
+      "name": "Antarctica"
+    }
+  ],
+  "destinations": [
+    {
+      "id": 1,
+      "name": "New York City",
+      "country": "USA",
+      "state": "NY",
+      "continent_id": 1,
+      "user_id": 1,
+      "details": "Visited in 2022, loved the skyline!",
+      "isLiked": true
+    },
+    {
+      "id": 2,
+      "name": "Paris",
+      "country": "France",
+      "state": "",
+      "continent_id": 2,
+      "user_id": 2,
+      "details": "Visited in 2023, enjoyed the museums.",
+      "isLiked": false
+    },
+    {
+      "id": 3,
+      "name": "Tokyo",
+      "country": "Japan",
+      "state": "",
+      "continent_id": 3,
+      "user_id": 1,
+      "details": "Visited in 2021, loved the culture.",
+      "isLiked": true
+    }
+  ]
+}
