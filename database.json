@@ -1,78 +1,455 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Alice",
-      "email": "alice@example.com",
-      "password": "password123"
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com"
     },
     {
-      "id": 2,
-      "name": "Bob",
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password456",
+      "isStaff": false
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "password": "password789",
+      "isStaff": true
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
       "email": "bob@example.com",
-      "password": "password456"
+      "password": "password012",
+      "isStaff": true
+    },
+    {
+      "id": "5",
+      "name": "Adina Johnson",
+      "email": "AJohnson@example.com",
+      "address": "",
+      "phone": "",
+      "isStaff": false
+    },
+    {
+      "id": "5d41",
+      "email": "abdul@example.com",
+      "fullName": "Abdul",
+      "password": "123123",
+      "isStaff": false
+    },
+    {
+      "id": "c4cb",
+      "email": "Ali@example.com",
+      "fullName": "Ali",
+      "password": "123123",
+      "isStaff": false
     }
   ],
   "continents": [
     {
-      "id": 1,
+      "id": "1",
       "name": "North America"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Europe"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Asia"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Africa"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Australia"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "South America"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Antarctica"
     }
   ],
   "destinations": [
     {
-      "id": 1,
-      "name": "New York City",
+      "id": "2",
+      "name": "Los Angeles",
       "country": "USA",
-      "state": "NY",
-      "continent_id": 1,
-      "user_id": 1,
-      "details": "Visited in 2022, loved the skyline!",
-      "isLiked": true
+      "state": "CA",
+      "continent_id": "1",
+      "details": "Great entertainment. Famous for Hollywood and beaches.\nI can't wait to visit again.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2020-06-15"
     },
     {
-      "id": 2,
-      "name": "Paris",
+      "id": "3",
+      "name": "Chicago",
+      "country": "USA",
+      "state": "IL",
+      "continent_id": "1",
+      "details": "Amazing architecture. Known for deep-dish pizza and skyscrapers.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2021-05-20"
+    },
+    {
+      "id": "7",
+      "name": "Lyon",
       "country": "France",
       "state": "",
-      "continent_id": 2,
-      "user_id": 2,
-      "details": "Visited in 2023, enjoyed the museums.",
-      "isLiked": false
+      "continent_id": "2",
+      "details": "Great cuisine. Renowned for its historical and architectural landmarks.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2023-08-15"
     },
     {
-      "id": 3,
+      "id": "8",
+      "name": "Bordeaux",
+      "country": "France",
+      "state": "",
+      "continent_id": "2",
+      "details": "Excellent wine. Famous for its wine regions and Gothic architecture.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-05-01"
+    },
+    {
+      "id": "9",
       "name": "Tokyo",
       "country": "Japan",
       "state": "",
-      "continent_id": 3,
-      "user_id": 1,
-      "details": "Visited in 2021, loved the culture.",
-      "isLiked": true
+      "continent_id": "3",
+      "details": "Culture and food. Known for its bustling streets and technology.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2021-09-05"
+    },
+    {
+      "id": "10",
+      "name": "Kyoto",
+      "country": "Japan",
+      "state": "",
+      "continent_id": "3",
+      "details": "Beautiful temples. Famous for its classical Buddhist temples and gardens.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2022-03-10"
+    },
+    {
+      "id": "11",
+      "name": "Osaka",
+      "country": "Japan",
+      "state": "",
+      "continent_id": "3",
+      "details": "Street food galore. Known for its modern architecture and nightlife.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2023-11-22"
+    },
+    {
+      "id": "12",
+      "name": "Hiroshima",
+      "country": "Japan",
+      "state": "",
+      "continent_id": "3",
+      "details": "Historical sites. Famous for the Peace Memorial Park and museum.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-06-18"
+    },
+    {
+      "id": "13",
+      "name": "Cape Town",
+      "country": "South Africa",
+      "state": "",
+      "continent_id": "4",
+      "details": "Beautiful scenery. Known for Table Mountain and its beaches.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2022-04-12"
+    },
+    {
+      "id": "14",
+      "name": "Johannesburg",
+      "country": "South Africa",
+      "state": "",
+      "continent_id": "4",
+      "details": "Vibrant city. Famous for its role in the apartheid struggle.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2023-05-08"
+    },
+    {
+      "id": "15",
+      "name": "Durban",
+      "country": "South Africa",
+      "state": "",
+      "continent_id": "4",
+      "details": "Beautiful beaches. Known for its African, Indian, and colonial influences.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-01-20"
+    },
+    {
+      "id": "16",
+      "name": "Pretoria",
+      "country": "South Africa",
+      "state": "",
+      "continent_id": "4",
+      "details": "Rich history. Famous for its jacaranda trees and government buildings.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-08-01"
+    },
+    {
+      "id": "17",
+      "name": "Sydney",
+      "country": "Australia",
+      "state": "NSW",
+      "continent_id": "5",
+      "details": "Fantastic beaches. Known for the Sydney Opera House and Harbour Bridge.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2023-12-15"
+    },
+    {
+      "id": "18",
+      "name": "Melbourne",
+      "country": "Australia",
+      "state": "VIC",
+      "continent_id": "5",
+      "details": "Cultural hub. Famous for its art, music, and coffee culture.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2024-04-10"
+    },
+    {
+      "id": "19",
+      "name": "Brisbane",
+      "country": "Australia",
+      "state": "QLD",
+      "continent_id": "5",
+      "details": "Great weather. Known for its vibrant urban precincts and outdoor lifestyle.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-07-07"
+    },
+    {
+      "id": "20",
+      "name": "Perth",
+      "country": "Australia",
+      "state": "WA",
+      "continent_id": "5",
+      "details": "Outdoor adventures. Famous for its beaches and nearby wine regions.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-02-14"
+    },
+    {
+      "id": "21",
+      "name": "Dubai",
+      "country": "UAE",
+      "state": "N/A",
+      "continent": "Asia",
+      "details": "I would like to visit again! Known for luxury shopping and ultramodern architecture.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2023-08-22"
+    },
+    {
+      "id": "22",
+      "name": "Jeddah",
+      "country": "KSA",
+      "state": "N/A",
+      "continent": "Asia",
+      "details": "Home. Famous for its waterfront and historical Al-Balad district.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2024-03-18"
+    },
+    {
+      "id": "23",
+      "name": "Orlando",
+      "country": "USA",
+      "state": "FL",
+      "continent": "North America",
+      "details": "Theme park fun. Known for Walt Disney World and Universal Studios.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2023-09-10"
+    },
+    {
+      "id": "24",
+      "name": "Jeddah",
+      "country": "KSA",
+      "state": "N/A",
+      "continent": "Asia",
+      "details": "Great city and lovely people. Famous for its rich culture and history.",
+      "isLiked": true,
+      "user_id": "2",
+      "visitedDate": "2023-11-11"
+    },
+    {
+      "id": "25",
+      "name": "Dubai",
+      "country": "UAE",
+      "state": "N/A",
+      "continent": "Asia",
+      "details": "Luxury everywhere. Known for its iconic skyline and desert adventures.",
+      "isLiked": false,
+      "user_id": "2",
+      "visitedDate": "2024-05-20"
+    },
+    {
+      "id": "26",
+      "name": "Murfreesboro",
+      "country": "USA",
+      "state": "TN",
+      "continent": "North America",
+      "details": "Growing town. Known for its Civil War history and green spaces.",
+      "isLiked": true,
+      "visitedDate": "2024-08-01",
+      "user_id": "2"
+    },
+    {
+      "id": "27",
+      "name": "Mecca",
+      "country": "KSA",
+      "state": "N/A",
+      "continent": "Asia",
+      "details": "Holy pilgrimage. Famous for the Kaaba and Hajj pilgrimage.",
+      "isLiked": true,
+      "visitedDate": "2024-07-28",
+      "user_id": "2"
+    }
+  ],
+  "travelHistory": [
+    {
+      "user_id": "1",
+      "destination_ids": ["2", "3"],
+      "id": "5ad5"
+    },
+    {
+      "user_id": "2",
+      "destination_ids": ["7", "8", "23", "24", "25", "26", "27"],
+      "id": "fee6"
+    },
+    {
+      "user_id": "3",
+      "destination_ids": ["9", "10", "11", "12"],
+      "id": "8e5f"
+    },
+    {
+      "user_id": "4",
+      "destination_ids": ["13", "14", "15", "16"],
+      "id": "82fd"
+    },
+    {
+      "user_id": "5",
+      "destination_ids": ["17", "18", "19", "20"],
+      "id": "386b"
+    },
+    {
+      "id": "24bb",
+      "user_id": "6",
+      "destination_ids": ["21", "22"]
+    }
+  ],
+  "journalEntries": [
+    {
+      "id": "a0e8",
+      "date": "2024-08-01",
+      "title": "My 1st Journal",
+      "body": "Testing the functionality of this new component.",
+      "user_id": "6"
+    },
+    {
+      "id": "3bfb",
+      "date": "2024-08-01",
+      "title": "notes for my next trip",
+      "body": "I need to go somewhere along the west coast beaches. I miss being near water.",
+      "user_id": "3"
+    },
+    {
+      "id": "ba8e",
+      "date": "2024-08-01",
+      "title": "Fall Season",
+      "body": "I need to visit Denver, CO to see my sister for her BirthDay.",
+      "user_id": "5"
+    },
+    {
+      "id": "086e",
+      "date": "2024-08-01",
+      "title": "Denver Trip",
+      "body": "Denver, the capital of Colorado, is an American metropolis dating to the Old West era. Larimer Square, the city’s oldest block, features landmark 19th-century buildings. Museums include the Denver Art Museum, an ultramodern complex known for its collection of indigenous works, and the mansion of famed Titanic survivor Molly Brown. Denver is also a jumping-off point for ski resorts in the nearby Rocky Mountains.",
+      "user_id": "1"
+    },
+    {
+      "id": "8c85",
+      "date": "2024-07-28",
+      "title": "Nashville",
+      "body": "The capital of the U.S. state of Tennessee and home to Vanderbilt University. Legendary country music venues include the Grand Ole Opry House, home of the famous “Grand Ole Opry” stage and radio show. The Country Music Hall of Fame and Museum and historic Ryman Auditorium are Downtown, as is the District, featuring honky-tonks with live music and the Johnny Cash Museum, celebrating the singer's life.",
+      "user_id": "1"
+    },
+    {
+      "id": "ae0e",
+      "date": "2024-08-06",
+      "title": "New Journey",
+      "body": "Im excited to turn this into a timeline!",
+      "user_id": "2"
+    },
+    {
+      "id": "93e3",
+      "date": "2024-08-01",
+      "title": "Good Morning",
+      "body": "Adding more text here to make it easy for the timeline style to take shape!",
+      "user_id": "2"
+    },
+    {
+      "id": "2c26",
+      "date": "2024-08-02",
+      "title": "Hi",
+      "body": "I need to visit Denver this fall. Heard Its amazing!",
+      "user_id": "2"
+    },
+    {
+      "id": "3adf",
+      "date": "2024-08-03",
+      "title": "N/A",
+      "body": "oihwljenfhcnadsvilkcneqrpiavlkqrenak",
+      "user_id": "2"
+    },
+    {
+      "id": "77c2",
+      "date": "2024-08-04",
+      "title": "N/A",
+      "body": "jcnewiopvhcjnqpriejvipqehjr'v'niqklerhjvndf;sjlhvqro;eljv",
+      "user_id": "2"
+    },
+    {
+      "id": "28f0",
+      "date": "2024-08-05",
+      "title": "UHA",
+      "body": "IJERPITJQEOAIALNBGV;OQLKAEJRG'PKJQMNOA;ERLJNGD;JOQLNSAG'PKQ;OQLKEAJR;LKMSLKNBAJKDNFGKGQA.ER",
+      "user_id": "2"
+    },
+    {
+      "id": "2c30",
+      "date": "2024-07-31",
+      "title": "Test",
+      "body": "jwkelfncpokqnewfrpknfvqpewinrvpqnkevpkqnvkn.\njwkelfncpokqnewfrpknfvqpewinrvpqnkevpkqnvkn.\njwkelfncpokqnewfrpknfvqpewinrvpqnkevpkqnvkn.\njwkelfncpokqnewfrpknfvqpewinrvpqnkevpkqnvkn.\n",
+      "user_id": "2"
     }
   ]
 }
